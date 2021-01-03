@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Data
-@Entity(name = "servico")
+@Entity(name = "SERVICO")
 public class Servico {
 
     @Id

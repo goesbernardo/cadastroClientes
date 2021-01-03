@@ -2,14 +2,12 @@ package br.com.goesbernardo.clientes.controller;
 
 import br.com.goesbernardo.clientes.model.Cliente;
 import br.com.goesbernardo.clientes.repository.ClienteRepository;
-import com.sun.xml.bind.v2.TODO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/clientes")
@@ -17,6 +15,8 @@ public class ClienteController {
 
     @Autowired
     private ClienteRepository clienteRepository;
+
+
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
